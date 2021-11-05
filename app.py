@@ -11,7 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = getenv('secretkey')
 
 db = SQLAlchemy(app)
-
+#comment
 class Employee(db.Model):
     empno = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(50))
